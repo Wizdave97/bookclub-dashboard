@@ -510,13 +510,7 @@
   opacity: 1;
   z-index: 30;
 }
-.carousel-cell:hover .carousel-overlay {
-  opacity: 1;
-}
-.carousel-cell:hover .book-details {
-  opacity: 1;
-  z-index: 30;
-}
+
 .book-details {
   display: flex;
   flex-direction: column;
@@ -635,8 +629,15 @@
     height: 20rem;
     margin-right: 30px;
   }
+  .carousel-cell:hover .carousel-overlay {
+    opacity: 1;
+  }
+  .carousel-cell:hover .book-details {
+    opacity: 1;
+    z-index: 30;
+  }
   .cell-button {
-    display: none;
+    display: none !important;
   }
   .book {
     width: 32%;
